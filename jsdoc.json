@@ -1,0 +1,21 @@
+{
+  "tags": { "allowUnknownTags": true },
+  "sourceType": "module",
+  "source": {
+    "include": ["src"],
+    "exclude": ["tests", "node_modules", "src/tools", "src/api", "src/index.js"],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|/|\\\\)_"
+  },
+  "plugins": [],
+  "opts": {
+    "encoding": "utf8",
+    "recurse": true,
+    "destination": "docs/api",
+    "template": "templates/default"
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  }
+}
