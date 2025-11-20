@@ -10,7 +10,7 @@ const http = ky.create({
   timeout: CONFIG.TIMEOUT_MS,
   headers: {
     'user-agent': CONFIG.USER_AGENT,
-    'accept': 'application/json',
+    accept: 'application/json',
     'content-type': 'application/json',
   },
   hooks: {
